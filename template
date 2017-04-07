@@ -19,7 +19,13 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Enhörningar</h1>
+    <body>
+    <form action="action.php" method="post">
+    Id på enhörningar <br>
+    <input type="text" id="id"><br>
+    <button type="button" class="btnShowUnicorn">Visa enhörning</button>
+    <button type="button" class="btnShowUnicorn">Visa alla enhörningar</button>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
