@@ -1,0 +1,13 @@
+{
+    "name": "mah/test",
+    "description": "Guzzle",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "monolog/monolog": "^1.22",
+        "catfan/medoo": "^1.2",
+        "twbs/bootstrap": "^3.3"
+    },
+    "license": "BSD",
+    "minimum-stability": "stable"
+}
