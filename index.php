@@ -18,18 +18,27 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<?php include 'action.php';?>
+<?php 
+include 'action.php';
+;?>
 
   </head>
   <body>
     <h1>Enhörningar</h1>
-    <body>
-    <form action="action.php" method="post">Id på enhörningar<br>
-    <input type="text" name="id">
-<button input type="submit" name="btnSingleUnicorn">Enhörning</button>
-<button input type="submit" name="btnAllUnicorn">Alla enhörningar</button>
-</form>
+	<form action="action.php" method="post">Id på enhörningar<br>
+	<input type="text" name="id">
+	<button input type="submit" name="btnSingleUnicorn">Sök ID</button><br>
 
+<?php
+	$count = 0;
+	$data = getAllUnicorn();
+	foreach($data as $value){
+	$count += 1;	
+	echo $count , ".	", $value->name; ?>
+	<button input type="submit" name="<?php echo $count ?>">Läs mer</button><br><?php
+	}
+?>
+</form>
 
 
 
