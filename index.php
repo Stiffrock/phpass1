@@ -20,15 +20,13 @@
     <![endif]-->
 <?php 
 include 'action.php';
-;?>
-
+?>
   </head>
   <body>
     <h1>Enhörningar</h1>
 	<form action="action.php" method="post">Id på enhörningar<br>
 	<input type="text" name="id">
 	<button input type="submit" name="btnSingleUnicorn">Sök ID</button><br>
-
 <?php
 	$count = 0;
 	$data = getAllUnicorn();
@@ -39,10 +37,6 @@ include 'action.php';
 	}
 ?>
 </form>
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

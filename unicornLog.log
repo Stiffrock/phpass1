@@ -42,3 +42,7 @@
 [2017-04-09 13:32:17] log.INFO: "Requested info about unicorns" [] []
 [2017-04-09 13:32:23] log.INFO: "Requested info about: Nordsvensk travh\u00f6rning" [] []
 [2017-04-09 13:32:42] log.INFO: "Requested info about: Fransk v\u00e5gman" [] []
+[2017-04-09 13:44:39] log.INFO: "Requested info about unicorns" [] []
+[2017-04-09 13:44:42] log.INFO: "Requested info about: Nordsvensk travh\u00f6rning" [] []
+[2017-04-09 13:44:44] log.INFO: "Requested info about: Karibisk strandponny" [] []
+[2017-04-09 13:44:48] log.INFO: "Requested info about: Tord\u00f6nsenh\u00f6rning" [] []

@@ -5,7 +5,8 @@
 <?php
 include 'logic.php';
 
-function drawHtml($data){
+function drawHtml($data)
+{
 	?><style>body{text-align: center;}</style><?php
 	?> <h1> <?php echo $data->name; ?> </h1> <br> <?php
 	?> <body> <?php echo $data->description;?> <br> <?php
@@ -13,12 +14,11 @@ function drawHtml($data){
 	echo $data->spottedWhere->name;?> <br><br> <?php
 	echo $data->spottedWhen->date;?> <br><?php
 	?><img src="<?php echo $data->image; ?>">
-<?php
+	<?php
 }
  if (isset($_POST['btnSingleUnicorn'])){
 	$data = getUnicorn($_POST["id"]);
-	drawHtml($data);
-	
+	drawHtml($data);	
 }
 
 else if(isset($_POST['btnAllUnicorn'])){
