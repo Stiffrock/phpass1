@@ -12,9 +12,13 @@ function drawHtml($data)
 	?> <body> <?php echo $data->description;?> <br> <?php
 	echo $data->reportedBy;?></body> <br> <?php
 	echo $data->spottedWhere->name;?> <br><br> <?php
-	echo $data->spottedWhen->date;?> <br><?php
-	?><img src="<?php echo $data->image; ?>">
-	<?php
+	echo $data->spottedWhen->date;?> <br>
+	<br><form action ="index.php">
+		<button input type="submit" name="Back">Tillbaka</button>
+	</form><br>
+	<img src="<?php echo $data->image; ?>">
+
+<?php
 }
  if (isset($_POST['btnSingleUnicorn'])){
 	$data = getUnicorn($_POST["id"]);
